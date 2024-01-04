@@ -1,3 +1,5 @@
+@file:Suppress("UNUSED_EXPRESSION")
+
 plugins {
     id("com.android.application")
     id("com.google.gms.google-services")

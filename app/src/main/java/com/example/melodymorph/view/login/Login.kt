@@ -1,13 +1,12 @@
-package com.example.melodymorph
+package com.example.melodymorph.view.login
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.google.firebase.ktx.Firebase
+import com.example.melodymorph.R
 
-class MainActivity : AppCompatActivity() {
+class Login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        Firebase
+        setContentView(R.layout.activity_login)
     }
 }
