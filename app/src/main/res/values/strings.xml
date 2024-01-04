@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MelodyMorph</string>
+    <string name="cadastre_se">Cadastre-se</string>
+    <string name="email">email</string>
+    <string name="senha">senha</string>
+    <string name="cadastrar">Cadastrar</string>
 </resources>
