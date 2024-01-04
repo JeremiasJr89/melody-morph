@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "450035428262",
+    "project_id": "melodymorph-2a48e",
+    "storage_bucket": "melodymorph-2a48e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450035428262:android:17cc602bdc663d22b7bd67",
+        "android_client_info": {
+          "package_name": "com.example.melodymorph"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYDUD2uxoGxn9-qRWccMQFJnJVkAsH3vY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
