@@ -9,6 +9,7 @@ import com.example.melodymorph.databinding.ActivityMainBinding
 import com.example.melodymorph.view.login.Login
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
+import java.lang.Long.getLong
 
 class MainActivity : AppCompatActivity() {
 
@@ -50,9 +51,18 @@ class MainActivity : AppCompatActivity() {
             db.collection(users).document("Jere")
                 .addSnapshotListener { documento, error ->
                     if (documento != null) {
-                        binding.txtResultado.text = documento.getString("nome")
+                        val idade = documento.getLong("idade")
+                        binding.txtResultadoNome.text = documento.getString("nome")
+                        binding.txtResultadoSobrenome.text = documento.getString("nome")
+                        binding.txtResultadoIdade.text = idade.toString()
                     }
                 }
+        }
+        binding.buttonUpgradeData.setOnClickListener {
+           db.collection(users).document("Jere")
+               .update("sobrenome", "Santos").addOnCompleteListener{
+                   Log.d("db_update","Sucesso ao atualizar os dados do usuario")
+               }
         }
 
 
