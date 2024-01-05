@@ -64,6 +64,12 @@ class MainActivity : AppCompatActivity() {
                    Log.d("db_update","Sucesso ao atualizar os dados do usuario")
                }
         }
+        binding.buttonDelData.setOnClickListener {
+            db.collection(users).document("Jere")
+                .delete().addOnCompleteListener{
+                    Log.d("db_update","Sucesso ao deletar os dados do usuario")
+                }
+        }
 
 
     }

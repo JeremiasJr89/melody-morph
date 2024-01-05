@@ -59,6 +59,19 @@
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold" />
+    <Button
+        android:id="@+id/button_del_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"
+        android:padding="15dp"
+        android:text="@string/deletar_dados"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
 
     <TextView

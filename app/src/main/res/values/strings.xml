@@ -57,4 +57,5 @@
     <string name="gravar">Gravar\n</string>
     <string name="ler_dados">Ler Dados\n</string>
     <string name="atualizar_dados">Atualizar Dados\n</string>
+    <string name="deletar_dados">Deletar</string>
 </resources>
