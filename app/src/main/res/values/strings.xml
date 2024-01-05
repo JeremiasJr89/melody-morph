@@ -6,4 +6,8 @@
     <string name="cadastrar">Cadastrar</string>
     <string name="preencha_todos_os_campos">Preencha todos os campos!</string>
     <string name="sucesso_ao_cadastrar_usuario">Sucesso ao cadastrar usuario!</string>
+    <string name="login">Login</string>
+    <string name="login_do_usuario">Login do Usuario\n</string>
+    <string name="entrar">Entrar</string>
+    <string name="tela_para_cadastro">Não tem uma conta?? Cadastre-se agora mesmo</string>
 </resources>
