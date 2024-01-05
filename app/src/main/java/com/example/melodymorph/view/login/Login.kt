@@ -44,7 +44,7 @@ class Login : AppCompatActivity() {
                             is FirebaseAuthInvalidCredentialsException -> "Digite um email valido!"
                             is FirebaseAuthUserCollisionException -> "Esta conta ja foi cadastrada!"
                             is FirebaseNetworkException -> "Sem conexão com a internet!"
-                            else -> "Erro ao cadastrar o usuario!"
+                            else -> "Error!"
                         }
                         val snackbar = Snackbar.make(
                             view,
