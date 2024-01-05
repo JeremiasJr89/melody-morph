@@ -4,4 +4,6 @@
     <string name="email">email</string>
     <string name="senha">senha</string>
     <string name="cadastrar">Cadastrar</string>
+    <string name="preencha_todos_os_campos">Preencha todos os campos!</string>
+    <string name="sucesso_ao_cadastrar_usuario">Sucesso ao cadastrar usuario!</string>
 </resources>
