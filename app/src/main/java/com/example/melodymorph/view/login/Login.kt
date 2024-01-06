@@ -2,11 +2,10 @@ package com.example.melodymorph.view.login
 
 import android.content.Intent
 import android.graphics.Color
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.melodymorph.R
-import com.example.melodymorph.databinding.ActivityCadastroBinding
+import androidx.appcompat.app.AppCompatActivity
 import com.example.melodymorph.databinding.ActivityLoginBinding
+import com.example.melodymorph.view.MainActivity
 import com.example.melodymorph.view.cadastro.Cadastro
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.FirebaseNetworkException
@@ -63,8 +62,18 @@ class Login : AppCompatActivity() {
     }
 
     private fun goScreanMain() {
-        val intent = Intent(this, Cadastro::class.java)
+        val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
         finish()
+    }
+
+    override fun onStart() {
+        super.onStart()
+
+        val usuarioAtual = FirebaseAuth.getInstance().currentUser
+
+        if(usuarioAtual != null){
+            goScreanMain()
+        }
     }
 }
